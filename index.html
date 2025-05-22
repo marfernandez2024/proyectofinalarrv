@@ -5,32 +5,21 @@
  </head>
 
  <body>
- 
    <a-scene>
-  <!-- <a-assets>
-      <img id="elempedrado" src="empedrado.jpg">
-      <img id="papelpared" src="papeldeparedes.jpeg">
-      <a-asset-item id="elmuneco3d" src="muneco3d.glb"> </a-asset-item>
-   </a-assets> 
-   <<a-entity gltf-model="#elmuneco3d" position="0 0 -2"></a-entity> -->
-   
-    <!-- Suelo -->
-    <a-box position="0 0 -4" rotation="-90 0 0" width="6" height="8" depth="0.1" src="#suelomadera.jpg"></a-box> 
-   <!-- Pared izquierda 
-    <a-box position="-3 3 -4" rotation="0 90 0" width="6" height="6" depth="0.1"
-       material="src: #papelpared; repeat: 1 1;"></a-box>-->
+ 
+      <!-- Suelo -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#888"></a-plane>
 
-    <!-- Pared derecha  
-    <a-box position="3 3 -4" rotation="0 -90 0" width="6" height="6" depth="0.1" color="#DC143C"></a-box>-->
+      <!-- Paredes -->
+      <a-box position="0 2.5 -5" depth="0.1" width="10" height="5" color="#333"></a-box>
+      <a-box position="0 2.5 5" depth="0.1" width="10" height="5" color="#444"></a-box>
+      <a-box position="-5 2.5 0" depth="10" width="0.1" height="5" color="#555"></a-box>
+      <a-box position="5 2.5 0" depth="10" width="0.1" height="5" color="#666"></a-box>
 
-    <!--caja con animacion
-    <a-box position="-1 2 -5" animation="property: rotation; to: 360 360 360; dur: 5000; easing:linear; loop: true" color="tomato""></a-box>"
-    <!-- Pared de fondo 
-    <a-box position="0 3 -7" rotation="0 0 0" width="6" height="6" depth="0.1" color="#800080"></a-box>n-->
+      <!-- Techo -->
+      <a-box position="0 5 0" depth="10" width="10" height="0.1" color="#777"></a-box>
+  
 
-   
    </a-scene>
-
-
  </body>    
  </html>
