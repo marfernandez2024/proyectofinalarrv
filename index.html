@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    
+ </head>
+
+ <body>
+ 
+ <!--<a-scene>
+   <a-assets>
+      <img id="elempedrado" src="empedrado.jpg">
+      <img id="papelpared" src="papeldeparedes.jpeg">
+      <a-asset-item id="elmuneco3d" src="muneco3d.glb"> </a-asset-item>
+   </a-assets>
+   <a-entity gltf-model="#elmuneco3d" position="0 0 -2"></a-entity> -->
+   
+    <!-- Suelo -->
+    <a-box position="0 0 -4" rotation="-90 0 0" width="6" height="6" depth="0.1" src="#elempedrado"></a-box> 
+   <!-- Pared izquierda 
+    <a-box position="-3 3 -4" rotation="0 90 0" width="6" height="6" depth="0.1"
+       material="src: #papelpared; repeat: 1 1;"></a-box>-->
+
+    <!-- Pared derecha  
+    <a-box position="3 3 -4" rotation="0 -90 0" width="6" height="6" depth="0.1" color="#DC143C"></a-box>-->
+
+    <!--caja con animacion
+    <a-box position="-1 2 -5" animation="property: rotation; to: 360 360 360; dur: 5000; easing:linear; loop: true" color="tomato""></a-box>"
+    <!-- Pared de fondo 
+    <a-box position="0 3 -7" rotation="0 0 0" width="6" height="6" depth="0.1" color="#800080"></a-box>n-->
+
+   
+   </a-scene>
+
+
+ </body>    
+ </html>
