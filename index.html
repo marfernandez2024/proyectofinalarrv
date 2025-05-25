@@ -11,7 +11,13 @@
      <a-asset-item id="elpeon3d" src="peonmar.glb"> </a-asset-item>
 </a-assets>
 
- <a-entity gltf-model="#elpeon3d" position="0 0 -2"></a-entity>
+
+<!-- Cámara y controles -->
+<a-entity camera position="0 1.6 3" look-controls wasd-controls></a-entity>
+
+        <!-- Modelo 3D -->
+        <a-entity gltf-model="#elpeon3d" position="0 1 -2" scale="0.5 0.5 0.5"></a-entity>
+
 
       <!-- Suelo -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" src= "#tableroajedrez"></a-plane>
