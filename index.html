@@ -8,7 +8,11 @@
    <a-scene>
  <a-assets>
     <img id="tableroajedrez" src="tableroajedrez.jpg">
+     <a-asset-item id="elpeon3d" src="muneco3d.glb"> </a-asset-item>
 </a-assets>
+
+ <a-entity gltf-model="#elpeon3d" position="0 0 -2"></a-entity>
+
       <!-- Suelo -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" src= "#tableroajedrez"></a-plane>
 
