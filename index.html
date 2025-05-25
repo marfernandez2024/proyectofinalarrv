@@ -6,7 +6,7 @@
 
  <body>
    <a-scene>
-      <!--imagen 360-->
+        <!--imagen 360-->
       <a-sky src="cielo.jpg"></a-sky>
       
       <a-assets>
@@ -22,23 +22,19 @@
       
       
 
-      <!-- Suelo -->>
+      <!-- Suelo -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" src="#tableroajedrez"></a-plane>
- 
+
 
       <!-- Paredes -->
       <a-box position="0 2.5 -5" depth="0.1" width="10" height="5" color="#333"> 
-        <a-text value="Ajedrez" position="0 0 0.1" align="center" color="white" scale="2 2 2"></a-text> 
-      </a-box>
+         <a-text value="Ajedrez" position="0 0 0.1" align="center" color="white" scale="2 2 2"></a-text> </a-box>
       <a-box position="0 2.5 5" depth="0.1" width="10" height="5" color="#444"></a-box>
       <a-box position="-5 2.5 0" depth="10" width="0.1" height="5" color="#555"></a-box>
       <a-box position="5 2.5 0" depth="10" width="0.1" height="5" color="#666"></a-box>
 
-    
-    
-
       
-
+      
    </a-scene>
  </body>    
  </html>
