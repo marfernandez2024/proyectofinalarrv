@@ -38,18 +38,21 @@
       <a-box position="-5 1.5 0" depth="10" width="0.1" height="4" color="#FFD700"></a-box>
       <a-box position="5 1.5 0" depth="10" width="0.1" height="4" color="#FFD700"></a-box>
       <!-- Prisma girando y moviéndose con texto -->
-      <a-entity id="prisma" position="5 0 0" rotation="0 0 0" 
-          animation="property: position; from: 3 0 0; to: 0 8 -5; dur: 5000; easing: linear; loop: true"
-          animation__rotate="property: rotation; from: 0 0 0; to: 0 360 360jjj; dur: 5000; loop: true">
-          
-          <a-box depth="0.5" width="1.8" height="1.2" color=" color="#0077FF"></a-box>
+     
 
-          <!-- Texto en la cara frontal -->
-          <a-text value="Peones" position="0 0.5 0.3" align="center" color="white" scale="2 2 2"></a-text>
 
-         <!-- Texto en la cara opuesta -->
-         <a-text value="Peones" position="0 0.5 -0.3" rotation="0 180 0" align="center" color="white" scale="2 2 2"></a-text>
-      </a-entity>
+      <a-entity id="prisma" position="-5 3 0" rotation="0 0 0"
+    animation="property: position; from: -5 3 0; to: 5 3 0; dur: 5000; easing: linear; loop: true"
+    animation__rotate="property: rotation; from: 0 0 0; to: 0 360 360; dur: 5000; loop: true">
+    
+    <a-box depth="0.5" width="1.8" height="1.2" color="#0077FF"></a-box>
+
+    <!-- Texto en la cara frontal -->
+    <a-text value="Peones" position="0 0.5 0.3" align="center" color="white" scale="2 2 2"></a-text>
+
+    <!-- Texto en la cara opuesta -->
+    <a-text value="Peones" position="0 0.5 -0.3" rotation="0 180 0" align="center" color="white" scale="2 2 2"></a-text>
+    </a-entity>
 
       
    </a-scene>
