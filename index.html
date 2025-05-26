@@ -21,17 +21,10 @@
       <!-- Cámara y controles -->
       <a-entity camera position="0 1.6 3" look-controls wasd-controls></a-entity>
        <!-- Modelo 3D -->
-     <a-entity gltf-model="#elpeon3d" position="0.371 4 -1" scale="12 12 12"
-      animation="property: position; from: 0.371 4 -1; to: 0.371 0.026 -1; dur: 3000; easing: ease-out"
-      animation__rotate="property: rotation; from: 0 0 0; to: 0 360 0; dur: 3000; easing: linear">
-     </a-entity>
-
-     <a-entity gltf-model="#elpeonnegro3d" position="-1.2 4 -1" scale="8 8 8"
-      animation="property: position; from: -1.2 4 -1; to: -1.2 0.026 -1; dur: 3000; easing: ease-out"
-      animation__rotate="property: rotation; from: 0 0 0; to: 0 360 0; dur: 3000; easing: linear">
-     </a-entity>
-
+      <a-entity gltf-model="#elpeon3d" position="0.371 0.026 -1" scale="12 12 12"></a-entity>
+      <a-entity gltf-model="#elpeonnegro3d" position="-1.2 0.026 -1" scale="8 8 8"></a-entity>
       
+     
 
       <!-- Suelo -->
       <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" src="#tableroajedrez"></a-plane>
@@ -49,10 +42,10 @@
 
 
       <a-entity id="prisma" position="-5 3 0" rotation="0 0 0"
-    animation="property: position; from: -5 3 0; to: 5 3 0; dur: 5000; easing: linear; loop: true"
-    animation__rotate="property: rotation; from: 0 0 0; to: 0 360 360; dur: 5000; loop: true">
+      animation="property: position; from: -5 3 0; to: 5 3 0; dur: 5000; easing: linear; loop: true"
+      animation__rotate="property: rotation; from: 0 0 0; to: 0 360 360; dur: 5000; loop: true">
     
-    <a-box depth="0.5" width="1.8" height="1.2" color="#0077FF"></a-box>
+      <a-box depth="0.5" width="1.8" height="1.2" color="#0077FF"></a-box>
 
     <!-- Texto en la cara frontal -->
 
@@ -65,4 +58,4 @@
       
    </a-scene>
  </body> 
-</htnl>
+</html>
